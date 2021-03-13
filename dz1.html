@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<body>
+
+    <script>
+        /* 
+    1 задаем переменную температуры по Цельсию, Тс=36
+    2 задаем переменную температуры по Фаренгейту, Tf = (9 / 5) * Tc + 32 
+    3 в формулу подставляется значение Тс=36 и происходит подсчет
+    4 с помощью alert выводим сообщение с результатом 
+    */
+        'use stric';
+        let Tc = 36;
+        let Tf = (9 / 5) * Tc + 32;
+        alert(Tf);
+    </script>
+
+    <script>
+        /* 
+    1 задаем переменную name со строковым значением 'Василий'
+    2 задаем переменную admin равную переменной name
+    3 в формулу подставляется значение Тс=36 и происходит подсчет
+    4 с помощью console.log выводим admin в консоль
+    */
+        'use stric';
+        let name = 'Василий';
+        let admin = name;
+        console.log(admin);
+    </script>
+
+    <script>
+        /* 
+            1 с помощью console.log выводим (сумма двух чисел и конкатенация строки = строка 2010) в консоль
+            2 с помощью console.log выводим (число, строка, число = строка 101010) в консоль
+            3 с помощью console.log выводим (сумма двух чисел и унарный плюс строки = число 30) в консоль
+            4 с помощью console.log выводим (делим число на минус пустоту = -Infinity) в консоль
+            5 с помощью console.log выводим (not a number, хотя typeof +"2,5" показывает 'number', а не строку) в консоль
+            */
+        'use stric';
+        console.log(10 + 10 + "10");
+        console.log(10 + "10" + 10);
+        console.log(10 + 10 + +"10");
+        console.log(10 / -"");
+        console.log(10 / +"2,5");
+    </script>
+
+
+
+
+</body>
+
+</html>
