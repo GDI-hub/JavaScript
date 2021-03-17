@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<body>
+
+    <script>
+        //1 задание
+
+        'use strict'
+
+        //пример 1 
+        let a = 1, b = 1, c, d;
+        c = ++a;
+        alert(c); // ответ: 2 (инкремент 1+1)
+
+        //пример 2
+        d = b++;
+        alert(d); //ответ: 1 (инкремент 1, далее будет +1)
+
+        //пример 3
+        c = 2 + ++a;
+        alert(c); //ответ: 5 (2 + инкремент 2+1)
+
+        //пример 4
+        d = 2 + b++;
+        alert(d); //ответ: 4 (2 + инкремент 2)
+
+        alert(a); //3 (инкремент 3)
+        alert(b); //3 (инкремент 3)
+
+    </script>
+
+
+    <script>
+        //2 задание
+
+        'use strict'
+
+        let a = 2;
+        let x = 1 + (a *= 2); //(a *= 2 = 2 * 2);
+
+    </script>
+
+
+    <script>
+        //3 задание
+
+        'use strict'
+
+        let a = -3;
+        let b = 2;
+        if (a >= 0 && b >= 0) {
+            alert(a - b);
+        } if (a < 0 && b < 0) {
+            alert(a * b);
+        } if (a < 0 || b < 0 || a >= 0 || b >= 0) {
+            alert(a + b);
+        }
+
+
+    </script>
+
+
+    <script>
+        //4 задание
+
+        'use strict'
+
+        function getNumPlus() {
+            let num1 = 2;
+            let num2 = 3;
+            return (alert(num1 + num2));
+        }
+
+        getNumPlus();
+
+        function getNumMinus() {
+            let num1 = 2;
+            let num2 = 3;
+            return (alert(num1 - num2));
+        }
+
+        getNumMinus();
+
+        function getNumDivision() {
+            let num1 = 2;
+            let num2 = 3;
+            return (alert(num1 / num2));
+        }
+
+        getNumDivision();
+
+        function getNumMultiplication() {
+            let num1 = 2;
+            let num2 = 3;
+            return (alert(num1 * num2));
+        }
+
+        getNumMultiplication();
+
+    </script>
+
+
+    <script>
+        //5 задание
+
+        'use strict'
+
+        function mathOperation(num1, num2, operation) {
+            num1 = +prompt('Введите первое число');
+            num2 = +prompt('Введите второе число');
+            operation = prompt('Введите действие: +, -, /, *');
+            switch (operation) {
+                case "+":
+                    return (alert("Ваша сумма = " + (num1 + num2)));
+                case "-":
+                    return (alert("Ваша разность = " + (num1 - num2)));
+                case "/":
+                    return (alert("Ваше частное = " + (num1 / num2)));
+                case "*":
+                    return (alert("Ваше произведение = " + (num1 * num2)));
+                default:
+                    alert("Нет такого действия");
+            }
+        }
+
+        mathOperation();
+
+// хотел к каждой операции сделать свою кнопку, но не получилось...
+
+        //input type = "button" name = "Сложение" value = "Сложить" id = "check" onClick = 'mathOperation';
+
+        //<button type="submit" id="Сложить" onclick="mathOperation();">Сложение</button>
+
+        //let button = document.querySelector('button');
+        //button.addEventListener('click', mathOperation);
+    </script>
+
+</body>
+
+</html>
